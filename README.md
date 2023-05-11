@@ -1,4 +1,7 @@
-# Time:
+# Checkpoint 03 de Web Development with JavaScript
+
+
+## Equipe - Hello World 👾:
 - Caíque Walter Silva - rm550693
 - Gabriel Pacheco - rm550191
 - Guilherme Nobre Bernardo - rm98604
