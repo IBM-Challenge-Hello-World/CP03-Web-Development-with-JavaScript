@@ -41,7 +41,7 @@ body {
 
 .car {
     display: inline-block;
-    padding: 3px 10px;
+    padding: 5px 13px;
     color: white;
     background-color: white;
     box-shadow: 0 3px 50px rgb(0 0 0 / 0.2);
@@ -71,13 +71,14 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
     align-items: center;
     text-align: center;
 }
 
 .nav__lista {
-    margin: 0 2rem;
+    justify-content: center;
+    margin: 2rem;
     justify-content: center;
     align-items: center;
     text-align: right;
@@ -178,11 +179,16 @@ body {
 }
 
 .rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: auto;
     background-color: #131313;
     box-shadow: 0 3px 100px rgb(0 0 0 / 0.2);
     text-align: center;
     text-decoration: none;
+    padding: 2%;
+    gap: 3px;
 }
 
 #endereco {
@@ -201,57 +207,6 @@ body {
 
 #link__rodape {
     color: #c0c0c0;
-}
-
-#title__sobre {
-    font-family: var(--fonte-principal);
-    text-align: center;
-    margin-top: 2%;
-}
-
-.container__sobre {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 2% 5%;
-    box-shadow: 0 3px 100px rgb(0 0 0 / 0.2);
-    border-radius: 20px;
-}
-
-.img__familia {
-    width: 95%;
-    margin: 5%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
- 
-
-.sobre__textos {
-    width: 100%;
-    margin: 30% 50% 10% 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.textos__texto {
-    font-family: var(--fonte-principal);
-}
-
-
-.texto__primario {
-    width: 90%;
-}
-
-.textos__secundario {
-    width: 90%;
-    justify-content: center;
-    align-items:center ;
-    margin: 5%;
-    padding: 1%;
-}
-
-.img__secundaria {
-    width: 90%;
 }
 
 #date {
