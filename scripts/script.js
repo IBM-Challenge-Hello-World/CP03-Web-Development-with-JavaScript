@@ -53,3 +53,43 @@ let ano = data.getFullYear()
 
 date.innerHTML += `<p id="date"> ${dia} de ${meses[mes]} de ${ano} <\p>`
 
+// Slide Show VW GTI
+
+var imagensGTI = [
+    'imagens/gti-frontal.jpg',
+    'imagens/gti-traseira.jpg',
+    'imagens/gti-interna.jpg',
+    'imagens/gti-laterial.jpg',
+    'imagens/gti-painel.jpg',
+];
+
+var IndexGTI = 0;
+var timeGTI = 3000;
+
+function slideShowGTI() {
+    document.getElementById('gti').src = imagensGTI[IndexGTI];
+    IndexGTI++;
+    if (IndexGTI == imagensGTI.length) { IndexGTI = 0; }
+    setTimeout("slideShowGTI()", timeGTI);
+}
+slideShowGTI();
+
+// Slide Show BMW M440i
+
+var imagensM440i = [
+    'imagens/bmw-m440i-frontal.jpg',
+    'imagens/bmw-m440i-interior.jpg',
+    'imagens/bmw-m440i-painel.jpg',
+    'imagens/bmw-m440i-traseira-lateral.jpg',
+];
+
+var Index = 0;
+var time = 3000;
+
+function slideShowM440i() {
+    document.getElementById('m440i').src = imagensM440i[Index];
+    Index++;
+    if (Index == imagensM440i.length) { Index = 0; }
+    setTimeout("slideShowM440i()", time);
+}
+slideShowM440i();
