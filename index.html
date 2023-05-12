@@ -1,28 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
+
+    <link rel="shortcut icon" href="./imagens/logo" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./imagens/logoVinhaCitySemFundo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Hello Word Veiculos</title>
 </head>
 <body>
     
-    <div class="container">
-        <nav id="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/produtos.html">Produtos</a></li>
-                <li><a href="./pages/sobre.html">Sobre</a></li>
-                <li><a href="./pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="nav__cor">
+            <input type="button" class="car light" onmousedown="trocar('white', 'black')"/>
+            <input type="button" class="car dark" onmousedown="trocar('#000022', 'white')"/>
+        </div>
+
+        <div class="img__logo">
+            <img class="logo" src="./imagens/logo.png" alt="Logo Hello Word Veiculos">
+        </div>
+
+        <ul class="nav__lista">
+            <li class="lista__link">
+                <a href="index.html" class="link__button">Home</a>
+            </li>
+            <li class="lista__link">
+                <a href="/pages/sobre.html" class="link__button">Sobre nós</a>
+            </li>
+            <li class="lista__link">
+                <a href="/pages/contato.html" class="link__button">Contato</a>
+            </li>
+            <li class="lista__link">
+                <a href="./pages/produtos.html" class="link__button">Produtos</a>
+            </li>
+        </ul>
+    </header>
+        <h1 id="title__home">DESTAQUES</h1>
+
+    <div class="primeiro">
+        <img class="car__img" src="./imagens/gti-frontal.jpg" alt="GTI - gti-frontal">
+        <div class="descricao">
+            <h2 class="descricao__nome">VOLKSWAGEN | GOLF GTI 2018</h2>
+            <p id="title">Versão</p>
+            <p id="desc">2.0 350 TSI GASOLINA GTI DSG</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Completíssimo | Farol com Led diurno | Botao start | PAinel digital | Park assist | Couro preto com costuras vermelhas | Aceitamos trocas de maior ou menor valor | Laudo cautelar aprovado</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Travas elétricas, Vidros elétricos, Alarme, Freio ABS, Air bag do motorista, Rodas de liga leve, Desembaçador traseiro, Air bag duplo, Teto solar, Limpador traseiro, Retrovisores elétricos, Encosto de cabeça traseiro, Volante com Regulagem de Altura, Sensor de estacionamento, Farol xenônio, Bancos dianteiros com aquecimento, Controle automático de velocidade, Controle de tração, Retrovisor fotocrômico, Sensor de chuva, Ar condicionado digital, Farol de neblina, GPS, Direção Elétrica, Comando de áudio e telefone no volante, Banco bi-partido, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, Pára-choques na cor do veículo</p>
+        </div>
     </div>
 
-    <h1>Home</h1>
+    <div class="primeiro">
+        <img class="car__img" src="./imagens/bmw-m440i-frontal.jpg" alt="BMW M 440i - Frontal">
+        <div class="descricao">
+            <h2 class="descricao__nome">BMW | M 440I</h2>
+            <p id="title">Versão</p>
+            <p id="desc">3.0 I6 TWINTURBO GASOLINA COUPÉ STEPTRONIC</p>
+            <p id="title">Obersavações</p>
+            <p id="desc"> - </p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Travas elétricas, Vidros elétricos, Alarme, Freio ABS, Air bag do motorista, Rodas de liga leve, Bancos de couro, Desembaçador traseiro, Air bag duplo, Ar quente, Retrovisores elétricos, Encosto de cabeça traseiro, Volante com Regulagem de Altura, Sensor de estacionamento, Banco do motorista com ajuste de altura, Bancos dianteiros com aquecimento, Computador de bordo, Controle automático de velocidade, Controle de tração, Retrovisor fotocrômico, Ar condicionado digital, GPS, Direção Elétrica, Comando de áudio e telefone no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+    
+    <div class="primeiro">
+        <img class="car__img" src="./imagens/ferrari-458-frontal.jpg" alt="Ferrari 458 Fontral">
+        <div class="descricao">
+            <h2 class="descricao__nome">FERRARI | 458 SPIDER 2012</h2>
+            <p id="title">Versão</p>
+            <p id="desc">4.5 V8 GASOLINA F1-DCT</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Importação oficial | Giallo Modena | Sem detalhes | Sem marcas de uso | Apenas 5 unidades nessa configuração no país | Freio de cerâmica | Interior preto com costura em amarelo | Absolutamente impecável | Estamos na Vila Olimpia | Aceitamos trocas de maior ou menor valor</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Direção hidráulica, Freio ABS, Rodas de liga leve, Bancos de couro, Ar quente, Volante com Regulagem de Altura, Sensor de estacionamento, Banco do motorista com ajuste de altura, Controle automático de velocidade, Controle de tração, Comando de áudio e telefone no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, MP3 Player, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
 
-    <script src="./js/script.js"></script>
-    <script>alert("Seja Bem Vindo!")</script>
+    <footer class="rodape">
+
+        <p id="direitos">@2023 - All Rights Reserved</p>
+        <a id="link__rodape" href="./pages/contato.html">Contato | </a>
+        <a id="link__rodape" href="https://www.google.com/maps/place/FIAP/data=!4m7!3m6!1s0x94ce59c7dbf9ff57:0x4ca8eb5c4f7ecca9!8m2!3d-23.5640843!4d-46.6523865!16s%2Fg%2F12vsjz24l!19sChIJV__528dZzpQRqcx-T1zrqEw?authuser=0&hl=pt-BR&rclk=1" target="_blank" id="rua">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a>
+        <p id="date"></p>
+    </footer>
+
+    <script src="./scripts/script.js">
+    </script>
+
+    <!-- <script>
+        alert("Seja Bem-vindo")
+    </script> -->
 </body>
-</html>
+</html> 

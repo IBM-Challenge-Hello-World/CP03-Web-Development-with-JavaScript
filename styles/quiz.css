@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: var(--fonte-principal);
+    box-shadow: 0 3px 100px rgb(0 0 0 / 0.2);;
+    border-radius: 45px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    margin-top: 2%;
+}
+
+.perguntas {
+    margin: 1.5%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#respostas {
+    font-size: 0.8rem;
+
+}

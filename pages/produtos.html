@@ -1,27 +1,159 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Produtos</title>
+    
+    <link rel="stylesheet" href="../styles/endereco.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <script src="../scripts/script.js"></script>
+    
+    <title>Estoque</title>
 </head>
 <body>
-    
-    <div class="container">
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="nav__cor">
+            <input type="button" class="car light" onmousedown="trocar('white', 'black')"/>
+            <input type="button" class="car dark" onmousedown="trocar('#131313', 'white')"/>
+        </div>
+
+        <div class="img__logo">
+            <img class="logo" src="../imagens/logo.png" alt="Logo Hello Word Veiculos">
+        </div>
+
+        <ul class="nav__lista">
+            <li class="lista__link">
+                <a href="../index.html" class="link__button">Home</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/sobre.html" class="link__button">Sobre</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/contato.html" class="link__button">Contato</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/produtos.html" class="link__button">Produtos</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="marca">
+        <img class="marca__img" src="../imagens/porsche-logo.png" alt="Logo da Porsche">
+        <h1 class="marca__nome">Porsche</h1>
     </div>
 
-    <h1>Produtos</h1>
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/porsche-911gt3-fronta.jpg" alt="Porsche 911 GT3 Fontral">
+        <div class="descricao">
+            <h2 class="descricao__nome">PORSCHE | 911 GT3 2016</h2>
+            <p id="title">Versão</p>
+            <p id="desc">3.8 GT3 6 CILINDROS 24V GASOLINA 2P AUTOMÁTICO</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Carro absolutamente impecável | Revisada | PPF frontal | Escape Inotech Full (Acompanha o original) | Sem risquinhos, retoques ou detalhes | Aceitamos trocas</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Direção hidráulica, Freio ABS, Rodas de liga leve, Bancos de couro, Ar quente, Volante com Regulagem de Altura, Sensor de estacionamento, Banco do motorista com ajuste de altura, Controle automático de velocidade, Controle de tração, Comando de áudio e telefone no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, MP3 Player, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/porsche-911TurboS-frontal.jpg">
+        <div class="descricao">
+            <h2 class="descricao__nome">PORSCHE | 911 Turbo S</h2>
+            <p id="title">Versão</p>
+            <p id="desc">3.8 24V H6 GASOLINA TURBO S PDK</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Completíssima | Sem marcas de uso | PPF Frontal | Som Burmester | Mola H&R | Interno em couro total vermelho/preto | Rodas cubo rápido | Porsche Ceramic Brakes | Lift System | Keyless | Volante sport gt | Banco esportivo 18 vias | Acabamento interno em fibra de carbono | Aceitamos trocas de maior ou menor valor | Laudo cautelar aprovado</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Travas elétricas, Vidros elétricos, Alarme, Freio ABS, Air bag do motorista, Rodas de liga leve, Bancos de couro, Desembaçador traseiro, Air bag duplo, Teto solar, Limpador traseiro, Retrovisores elétricos, Volante com Regulagem de Altura, Tração 4x4, Sensor de estacionamento, Banco do motorista com ajuste de altura, Computador de bordo, Controle automático de velocidade, Controle de tração, Retrovisor fotocrômico, Ar condicionado digital, GPS, Direção Elétrica, Comando de áudio e telefone no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+   
+    <div class="marca">
+        <img class="marca__img" src="../imagens/honda-carros-logo.png" alt="Logo da Honda carros">
+        <h1 class="marca__nome">Honda</h1>
+    </div>
 
-    <script src="../js/script.js"></script>
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/honda-civicSI-frontal.jpg">
+        <div class="descricao">
+            <h2 class="descricao__nome">Honda | Civic SI Turbo 2007</h2>
+            <p id="title">Versão</p>
+            <p id="desc">2.0 SI 16V GASOLINA 4P MANUAL</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Aproximadamente 450cv de roda | SI Turbo | Motor forjado (pistão e biela) | Cambio forjado de 5 marchas com embreagem multidisco | Hondata | Controle de tração Hondata | Turbina Precision roletada | Cabeçote retrabalhado (molas,pratos e valvulas e comando) | Surge Tank | Coletor de admissão | Pneus Yokohama Ad48 semi slick | Mostradores Spa turbo | Bancos em couro | Aceitamos trocas de maior ou menor valor | Laudo cautelar aprovado</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Travas elétricas, Freio ABS, Air bag do motorista, Desembaçador traseiro, Air bag duplo, Distribuição eletrônica de frenagem</p>
+        </div>
+    </div>
+
+    <div class="marca">
+        <img class="marca__img" src="../imagens/mercedes-benz-logo.png" alt="Logo da Honda carros">
+        <h1 class="marca__nome">Mercedes-Benz</h1>
+    </div>
+
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/mercedez-a35Amg-frontal.jpg">
+        <div class="descricao">
+            <h2 class="descricao__nome">Mercedes-Benz | A 35s AMG</h2>
+            <p id="title">Versão</p>
+            <p id="desc">2.0 CGI GASOLINA SEDAN 4MATIC 7G-DCT</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Blindada Leandrini com AGP B33 | Absolutamente impecável | Sem marcas de uso | Teto solar translúcido | Sem risquinhos ou detalhes | Aceitamos trocas de maior ou menor valoro</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Vidros elétricos, Freio ABS, Air bag do motorista, Rodas de liga leve, Bancos de couro, Desembaçador traseiro, Air bag duplo, Teto solar, Ar quente, Retrovisores elétricos, Encosto de cabeça traseiro, Volante com Regulagem de Altura, Sensor de estacionamento, Banco do motorista com ajuste de altura, Computador de bordo, Controle automático de velocidade, Controle de tração, Ar condicionado digital, Farol de neblina, GPS, Direção Elétrica, Comando de áudio e telefone no volante, Banco bi-partido, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, MP3 Player, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+
+    <div class="marca">
+        <img class="marca__img" src="../imagens/ferrari-logo.png" alt="Logo da Ferrari">
+        <h1 class="marca__nome">Ferrari</h1>
+    </div>
+
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/ferrari-488GTB-frontal.jpg">
+        <div class="descricao">
+            <h2 class="descricao__nome">Ferrari | 488 GTB</h2>
+            <p id="title">Versão</p>
+            <p id="desc">3.9 V8 TURBO GASOLINA F1-DCT</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Rosso Corsa | Interno bege | PPF FULL | Lift System | Revisões na Via Italia | Importação oficial | Sem modificações | Aceitamos trocas | Laudo cautelar aprovado</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Rádio e CD Player, Freio ABS, Bancos de couro, Farol xenônio, Computador de bordo, Controle automático de velocidade, Controle de tração, Ar condicionado digital, Direção Elétrica, Controle de estabilidade</p>
+        </div>
+    </div>
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/ferrari-458-frontal.jpg" alt="Ferrari 458 Fontral">
+        <div class="descricao">
+            <h2 class="descricao__nome">FERRARI | 458 SPIDER 2012</h2>
+            <p id="title">Versão</p>
+            <p id="desc">4.5 V8 GASOLINA F1-DCT</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Importação oficial | Giallo Modena | Sem detalhes | Sem marcas de uso | Apenas 5 unidades nessa configuração no país | Freio de cerâmica | Interior preto com costura em amarelo | Absolutamente impecável | Estamos na Vila Olimpia | Aceitamos trocas de maior ou menor valor</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Direção hidráulica, Freio ABS, Rodas de liga leve, Bancos de couro, Ar quente, Volante com Regulagem de Altura, Sensor de estacionamento, Banco do motorista com ajuste de altura, Controle automático de velocidade, Controle de tração, Comando de áudio e telefone no volante, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, MP3 Player, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+
+    <div class="marca">
+        <img class="marca__img" src="../imagens/volkswagen-vw-logo.png" alt="Logo da Honda carros">
+        <h1 class="marca__nome">VW</h1>
+    </div>
+    <div class="primeiro">
+        <img class="car__img" src="../imagens/gti-frontal.jpg" alt="GTI - gti-frontal">
+        <div class="descricao">
+            <h2 class="descricao__nome">VOLKSWAGEN | GOLF GTI 2018</h2>
+            <p id="title">Versão</p>
+            <p id="desc">2.0 350 TSI GASOLINA GTI DSG</p>
+            <p id="title">Obersavações</p>
+            <p id="desc">Completíssimo | Farol com Led diurno | Botao start | PAinel digital | Park assist | Couro preto com costuras vermelhas | Aceitamos trocas de maior ou menor valor | Laudo cautelar aprovado</p>
+            <p id="title">Opcionais</p>
+            <p id="desc">Ar condicionado, Travas elétricas, Vidros elétricos, Alarme, Freio ABS, Air bag do motorista, Rodas de liga leve, Desembaçador traseiro, Air bag duplo, Teto solar, Limpador traseiro, Retrovisores elétricos, Encosto de cabeça traseiro, Volante com Regulagem de Altura, Sensor de estacionamento, Farol xenônio, Bancos dianteiros com aquecimento, Controle automático de velocidade, Controle de tração, Retrovisor fotocrômico, Sensor de chuva, Ar condicionado digital, Farol de neblina, GPS, Direção Elétrica, Comando de áudio e telefone no volante, Banco bi-partido, Controle de estabilidade, Distribuição eletrônica de frenagem, Kit Multimídia, Pára-choques na cor do veículo</p>
+        </div>
+    </div>
+    <footer class="rodape">
+        <p id="direitos">@2023 - All Rights Reserved</p>
+        <a id="link__rodape" href="contato.html">Contato</a>
+    </footer>
 </body>
 </html>

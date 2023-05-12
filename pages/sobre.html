@@ -1,27 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Sobre</title>
+    
+    <link rel="shortcut icon" href="./imagens/logoVinhaCitySemFundo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>VinhaCity</title>
 </head>
 <body>
     
-    <div class="container">
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./produtos.html">Produtos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header class="header">
 
-    <h1>Sobre</h1>
+        <div class="nav__cor">
 
-    <script src="../js/script.js"></script>
+            <p>Mudar Cor </p>
+            <input type="button" class="car bege" onmousedown="trocar('#c0c0c0')"/>
+            <input type="button" class="car azure" onmousedown="trocar('azure')"/>
+            <input type="button" class="car dark" onmousedown="trocar('#131313', 'white')"/>
+       
+        </div>
+
+        <div class="img__logo">
+
+            <img class="logo" src="../imagens/logoVinhaCitySemFundo.png" alt="Logo Vinha City">
+        
+        </div>
+
+        <ul class="nav__lista">
+            <li class="lista__link">
+                <a href="../index.html" class="link__button">Home</a>
+            </li>
+            <li class="lista__link">
+                <a href="sobre.html" class="link__button">Sobre</a>
+            </li>
+            <li class="lista__link">
+                <a href="quiz.html" class="link__button">Quiz</a>
+            </li>
+            <li class="lista__link">
+                <a href="contato.html" class="link__button">Contato</a>
+            </li>
+            <li class="lista__link">
+                <a href="endereco.html" class="link__button">Endereço</a>
+            </li>
+        </ul>
+    </header>
+
+    <h1 id="title__sobre">Nossa História</h1>
+
+    <section class="container__sobre">
+
+        <img class="img__familia" src="../imagens/weirich-foto-familia.jpg" alt="Foto da família Weirich">
+
+        <div class="sobre__textos">
+            <p class="textos__texto texto__primario">Descendente de imigrantes portugueses, o casal Weirich lavrou terras desde os sertões da Vila de Una até Piedade, região hoje situada entre as cidades de Ibiúna e Piedade. Na primeira década do século passado, estabeleceram-se em São Roque, no bairro de Canguera. Foram nessas terras férteis, de clima rigorosamente frio e seco, que encontraram as condições ideais para lançarem de vez suas raízes em solo brasileiro, construindo assim uma grande família.</p>
+        </div>
+        
+    </section>
+
+    <section class="container__sobre sobre__secundario">
+
+        <div class="sobre__textos textos__secundario">
+            <p class="textos__texto texto__secundario">Ao lado de lavouras tradicionais e de subsistência – feijão, batata, milho, marmelo e pêra – os irmãos Weirich foram os pioneiros a cultivar videiras e elaborar vinhos artesanais para consumo caseiro na região, entre os anos de 1910 e 1920. Como nessa época eram precários os meios de transporte, pois ainda não circulavam os veículos motorizados, a maior parte das mercadorias circulavam com a utilização de carros de boi e tropas de muares (burros e mulas cargueiros). Marcelo Weirich montou uma tropa famosa, que frequentemente levava para a Capital, ao mercado da Cantareira, hoje também conhecido como o ‘Mercadão de São Paulo’, os produtos agrícolas por ele cultivados. No retorno, trazia encomendas para diversos armazéns da região, parentes e amigos, como mantimentos, roupas, calçados e bijuterias. Por volta de 1920, o plantio de vinhedos e elaboração de vinhos começou a crescer a partir do cultivo das variedades de uvas americanas como Isabel e Niágara. Em 1928, tem início a construção do primeiro trecho do ramal ferroviário de Mairinque a Santos, sendo que em abril de 1931 é inaugurada a Estação de Canguera. Depois de totalmente construída, a ferrovia alcançaria a Baixada Santista, Litoral Sul e Vale do Ribeira, em 1937, abrindo um grande corredor comercial para os produtos do interior, entre eles, os vinhos da região de Canguera.</p>
+        </div>
+
+        <img class="img__familia img__secundaria" src="../imagens/weirich-foto-cultivo.jpg" alt="Foto da fazenda">
+
+    </section>
+
+    <footer class="rodape">
+
+        <p id="direitos">@2023 - All Rights Reserved</p>
+        <a id="link__rodape" href="contato.html">Contato</a>
+
+    </footer>
+
+
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

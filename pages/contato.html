@@ -1,27 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Contato</title>
+    
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+
+    <script src="../scripts/script.js"></script>
+
+    <title>Contato - H.WORD</title>
+
 </head>
 <body>
     
-    <div class="container">
-        <nav id="menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./produtos.html">Produtos</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="nav__cor">
+            <input type="button" class="car light" onmousedown="trocar('white', 'black')"/>
+            <input type="button" class="car dark" onmousedown="trocar('#131313', 'white')"/>
+        </div>
+
+        <div class="img__logo">
+            <img class="logo" src="../imagens/logo.png" alt="Logo Hello Word Veiculos">
+        </div>
+
+        <ul class="nav__lista">
+            <li class="lista__link">
+                <a href="../index.html" class="link__button">Home</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/sobre.html" class="link__button">Sobre</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/contato.html" class="link__button">Contato</a>
+            </li>
+            <li class="lista__link">
+                <a href="../pages/produtos.html" class="link__button">Produtos</a>
+            </li>
+        </ul>
+    </header>
+
+<section id="all_contato">
+    <container class="container">
+        
+        <form id="form">
+            <div> 
+
+                <h1 id="texto__contato">Cadastre-se para receber novidade</h1>
+
+                <div id="texto">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Insira seu Nome" required>
+                </div>
+
+                <div id="texto">
+                    <label for="tel">Telefone</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Insira seu numero de telefone" onclick (validarTel())>
+                    <span id="span">Insira um numero de telefone válido</span>
+                </div>
+
+                <div id="texto">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Insira seu E-mail"onclick(validarEmail())>
+                    <span id="span">Insira um E-mail válido</span>
+                </div>
+ 
+            </div>
+            
+            <input type="submit" value="Enviar" id="botao" onclick="validarEmail()">
+
+        </form>
+        
+    </container>
+
+    <div class="container__endereco">
+        <div class="endereco">
+            <h1 id="title__endereco">Venha nos fazer uma visita! </h1>
+            <hr>
+            <a href="https://www.google.com/maps/place/FIAP/data=!4m7!3m6!1s0x94ce59c7dbf9ff57:0x4ca8eb5c4f7ecca9!8m2!3d-23.5640843!4d-46.6523865!16s%2Fg%2F12vsjz24l!19sChIJV__528dZzpQRqcx-T1zrqEw?authuser=0&hl=pt-BR&rclk=1" target="_blank" id="rua">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a>
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=av paulista 1106&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href="https://capcuttemplate.org/">Capcuttemplate.org</a>
+            </div>
+        </div>
     </div>
+</section>
 
-    <h1>Contato</h1>
+    <footer class="rodape">
 
-    <script src="../js/script.js"></script>
+        <p id="direitos">@2023 - All Rights Reserved</p>
+        <a id="link__rodape" href="contato.html">Contato</a>
+
+    </footer>
+  
 </body>
 </html>
