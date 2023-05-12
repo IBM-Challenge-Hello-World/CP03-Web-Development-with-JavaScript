@@ -31,11 +31,12 @@ body {
     padding:0;
     margin: 0 0;
     border-radius: 20px;
-    transition: 0.5s;
+    
 }
 
 .nav__cor:hover {
     background-color: #131313;
+    transition: 0.5s;
 }
 
 .car {
