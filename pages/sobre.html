@@ -64,12 +64,41 @@
         </div>
     </section>
 
+    <section class="curiosidade">
+        <h1>Curiosidades sobre nós!</h1>
+        <p class="perguntas" id="carro">Qual é seu carro atual ?</p> 
+        <p class="perguntas" id="troca">Tem Interesse em Trocar seu carro?</p> 
+        <p class="perguntas" id="avaliacao">Qual é seu carro atual ?</p> 
+    </section>
+
     <footer class="rodape">
         <p id="direitos">@2023 - All Rights Reserved </p>
         <a id="link__rodape" href="../pages/contato.html">Contato</a>
         <a id="link__rodape" href="https://www.google.com/maps/place/FIAP/data=!4m7!3m6!1s0x94ce59c7dbf9ff57:0x4ca8eb5c4f7ecca9!8m2!3d-23.5640843!4d-46.6523865!16s%2Fg%2F12vsjz24l!19sChIJV__528dZzpQRqcx-T1zrqEw?authuser=0&hl=pt-BR&rclk=1" target="_blank" id="rua">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</a>
         <p id="date"></p>
     </footer>
+
     <script src="../scripts/script.js"></script>
+
+    <script>
+            // Perguntas da Página Sobre -
+    let responderPergintas = confirm("Gostaria de responder algumas perguntas?");
+
+    let carro = document.getElementById('carro')
+    let troca = document.getElementById('troca')
+    let avaliacao = document.getElementById('avaliacao')
+
+    if(responderPergintas == true){
+
+        let car = prompt("Qual seu carro atual ?")
+        carro.innerHTML+=`<p class="respostas">Voce possui um: ${car}</p>`
+
+        let change = prompt("Tem Interesse em Trocar seu carro? ")
+        troca.innerHTML+=`<p class="respostas">Voce possui um: ${change}</p>`
+
+        let valuation = prompt("Voce Sabia que nos temos a melhor avaliacão do seu usado ? ")
+        avaliacao.innerHTML +=`<p class="respostas">Traga seu ${car} e saia de carro novo! </p>`
+    } 
+    </script>
 </body>
 </html>
