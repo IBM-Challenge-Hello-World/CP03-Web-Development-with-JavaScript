@@ -212,3 +212,22 @@ body {
 #date {
     color: white;
 }
+
+.car__buy {
+    align-items: end;
+    justify-content: end;
+    text-align: end;
+    text-decoration: none;
+    background-color: rgb(16, 204, 16);
+    border: 2px solid rgb(16, 204, 16);
+    color: black;
+    padding: 1rem 4rem;
+    margin-left: 81%;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.car__buy:hover {
+    border: 2px solid rgb(16, 204, 16);
+    background-color: white;
+}
