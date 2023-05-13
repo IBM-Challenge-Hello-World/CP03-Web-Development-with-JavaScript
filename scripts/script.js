@@ -51,16 +51,16 @@ let mes = data.getMonth();
 let meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 let ano = data.getFullYear()
 
-date.innerHTML += `<p id="date"> ${dia} de ${meses[mes]} de ${ano} <\p>`
+// date.innerHTML += `<p id="date"> ${dia} de ${meses[mes]} de ${ano} <\p>`
 
-// Slide Show VW GTI
+// Sl   ide Show VW GTI
 
 var imagensGTI = [
-    'imagens/gti-frontal.jpg',
-    'imagens/gti-traseira.jpg',
-    'imagens/gti-interna.jpg',
-    'imagens/gti-laterial.jpg',
-    'imagens/gti-painel.jpg',
+    '../imagens/gti-frontal.jpg',
+    '../imagens/gti-traseira.jpg',
+    '../imagens/gti-interna.jpg',
+    '../imagens/gti-laterial.jpg',
+    '../imagens/gti-painel.jpg',
 ];
 
 var IndexGTI = 0;
@@ -83,13 +83,33 @@ var imagensM440i = [
     'imagens/bmw-m440i-traseira-lateral.jpg',
 ];
 
-var Index = 0;
-var time = 3000;
+var IndexM440i = 0;
+var timeM440i = 3000;
 
 function slideShowM440i() {
-    document.getElementById('m440i').src = imagensM440i[Index];
-    Index++;
-    if (Index == imagensM440i.length) { Index = 0; }
-    setTimeout("slideShowM440i()", time);
+    document.getElementById('m440i').src = imagensM440i[IndexM440i];
+    IndexM440i++;
+    if (IndexM440i == imagensM440i.length) { IndexM440i = 0; }
+    setTimeout("slideShowM440i()", timeM440i);
 }
 slideShowM440i();
+
+// Slide Show Ferrari 458 Spider -spider458
+
+var imagensspider458 = [
+    'imagens/ferrari-458-frontal.jpg',
+    'imagens/ferrari-458-interior.jpg',
+    'imagens/ferrari-458-painel.jpg',
+    'imagens/ferrari-458-traseira-lateral.jpg'
+];
+
+var Indexspider458 = 0;
+var timespider458 = 3000;
+
+function slideShow458Spider() {
+    document.getElementById('spider458').src = imagensspider458[Indexspider458];
+    Indexspider458++;
+    if (Indexspider458 == imagensspider458.length) { Indexspider458 = 0; }
+    setTimeout("slideShow458Spider()", timespider458 );
+}
+slideShow458Spider();
